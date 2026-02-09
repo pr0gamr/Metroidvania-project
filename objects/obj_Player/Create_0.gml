@@ -1,5 +1,6 @@
 hsp = 0;
 vsp = 0;
-grv = 0.3;
+grv = 0.45;
 walksp = 6;
-jumpsp = 9.75;
+accel = 1;
+jumpsp = 12;
