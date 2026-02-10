@@ -1,7 +1,8 @@
-var _key_left = keyboard_check(vk_left);
-var _key_right = keyboard_check(vk_right);
-var _key_jump = keyboard_check_pressed(vk_up);
+var _key_left = keyboard_check(ord("A"));
+var _key_right = keyboard_check(ord("D"));
+var _key_jump = keyboard_check_pressed(vk_space);
 var _grounded = 0;
+
 // movement
 
 var _move = (_key_right - _key_left) * walksp;
@@ -15,9 +16,22 @@ if (place_meeting(x,y+1,obj_invisWall))
 	_grounded = 1;
 }
 
-if (_grounded) and (_key_jump)
+if (_key_jump)
 {
-vsp = -jumpsp;
+	if (_grounded)
+	{
+		vsp = -jumpsp;
+	}
+	else if (place_meeting(x+3,y,obj_invisWall))
+	{
+		hsp = -walksp;
+		vsp = -jumpsp;
+	}
+	else if (place_meeting(x-3,y,obj_invisWall))
+	{
+		hsp = walksp;
+		vsp = -jumpsp;
+	}
 }
 
 
@@ -28,21 +42,6 @@ if (place_meeting(x+hsp,y,obj_invisWall))
 	if (vsp >= 1)
 	{
 		vsp = 1;
-	}
-	if (_key_jump)
-	{
-		vsp = -jumpsp;
-		if (!_grounded)
-		{
-			if (_key_right)
-			{
-				hsp = -walksp;
-			}
-			else if (_key_left)
-			{
-				hsp = walksp;
-			}
-		}
 	}
 }
 
