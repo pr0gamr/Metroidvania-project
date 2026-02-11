@@ -24,13 +24,13 @@ if (_key_jump)
 	}
 	else if (place_meeting(x+3,y,obj_invisWall))
 	{
-		hsp = -walksp;
-		vsp = -jumpsp;
+		hsp = -walksp*2.5;
+		vsp = -jumpsp + vsp*0.25;
 	}
 	else if (place_meeting(x-3,y,obj_invisWall))
 	{
-		hsp = walksp;
-		vsp = -jumpsp;
+		hsp = walksp*2.5;
+		vsp = -jumpsp + vsp*0.25;
 	}
 }
 
@@ -41,7 +41,7 @@ if (place_meeting(x+hsp,y,obj_invisWall))
 	hsp = 0;
 	if (vsp >= 1)
 	{
-		vsp = 1;
+		vsp = Approach(vsp, 1.5, 2);
 	}
 }
 
