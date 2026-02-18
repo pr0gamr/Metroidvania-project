@@ -64,7 +64,6 @@ if (place_meeting(x+hsp,y,obj_bouncefloor))
 	}
 }
 
-
 x = x + hsp
 
 //vertical collision
@@ -98,6 +97,5 @@ function Approach(speed, max_speed, acceleration)
             return max_speed;
         }
     }
-    
     return speed;
 }
