@@ -55,6 +55,14 @@ if (place_meeting(x+hsp,y,obj_invisWall))
 		vsp = Approach(vsp, 1.5, 2);
 	}
 }
+if (place_meeting(x+hsp,y,obj_bouncefloor))
+{
+	hsp = 0;
+	if (vsp >= 1)
+	{
+		vsp = Approach(vsp, 1.5, 2);
+	}
+}
 
 
 x = x + hsp
@@ -68,6 +76,10 @@ if(place_meeting(x,y+vsp,obj_invisWall))
 		y = y + sign(vsp);
 	}
 vsp = 0;
+}
+if(place_meeting(x,y+vsp,obj_bouncefloor))
+{
+	vsp = -vsp * 0.95;
 }
 
 y = y + vsp
