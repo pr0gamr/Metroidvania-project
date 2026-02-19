@@ -1,7 +1,6 @@
 var _key_left = keyboard_check(ord("A"));
 var _key_right = keyboard_check(ord("D"));
 var _key_jump = keyboard_check_pressed(vk_space);
-var _grounded = 0;
 
 // movement
 
@@ -13,12 +12,16 @@ vsp = vsp + grv;
 
 if (place_meeting(x,y+1,obj_invisWall))
 {
-	_grounded = 1;
+	grounded = 1;
+}
+else
+{
+	grounded = 0;
 }
 
 if (_key_jump)
 {
-	if (_grounded)
+	if (grounded)
 	{
 		vsp = -jumpsp;
 	}
@@ -34,6 +37,14 @@ if (_key_jump)
 	}
 }
 
+if (_move > 0)
+{
+	facing = 1;
+}
+else if (_move < 0)
+{
+	facing = -1;
+}
 
 //horizontal collision
 if (place_meeting(x+hsp,y,obj_invisWall))
@@ -44,7 +55,14 @@ if (place_meeting(x+hsp,y,obj_invisWall))
 		vsp = Approach(vsp, 1.5, 2);
 	}
 }
-
+if (place_meeting(x+hsp,y,obj_bouncefloor))
+{
+	hsp = 0;
+	if (vsp >= 1)
+	{
+		vsp = Approach(vsp, 1.5, 2);
+	}
+}
 
 x = x + hsp
 
@@ -57,6 +75,10 @@ if(place_meeting(x,y+vsp,obj_invisWall))
 		y = y + sign(vsp);
 	}
 vsp = 0;
+}
+if(place_meeting(x,y+vsp,obj_bouncefloor))
+{
+	vsp = -vsp * 0.95;
 }
 
 y = y + vsp
@@ -75,6 +97,5 @@ function Approach(speed, max_speed, acceleration)
             return max_speed;
         }
     }
-    
     return speed;
 }
