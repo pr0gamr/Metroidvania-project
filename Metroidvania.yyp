@@ -36,7 +36,6 @@
   "resources":[
     {"id":{"name":"obj_basicAttack","path":"objects/obj_basicAttack/obj_basicAttack.yy",},},
     {"id":{"name":"obj_bouncefloor","path":"objects/obj_bouncefloor/obj_bouncefloor.yy",},},
-    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_invisWall","path":"objects/obj_invisWall/obj_invisWall.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_pogoBlock","path":"objects/obj_pogoBlock/obj_pogoBlock.yy",},},
