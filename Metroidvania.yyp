@@ -36,9 +36,11 @@
   "resources":[
     {"id":{"name":"obj_basicAttack","path":"objects/obj_basicAttack/obj_basicAttack.yy",},},
     {"id":{"name":"obj_bouncefloor","path":"objects/obj_bouncefloor/obj_bouncefloor.yy",},},
+    {"id":{"name":"obj_hurtSurface","path":"objects/obj_hurtSurface/obj_hurtSurface.yy",},},
     {"id":{"name":"obj_invisWall","path":"objects/obj_invisWall/obj_invisWall.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_pogoBlock","path":"objects/obj_pogoBlock/obj_pogoBlock.yy",},},
+    {"id":{"name":"par_death","path":"particles/par_death/par_death.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
