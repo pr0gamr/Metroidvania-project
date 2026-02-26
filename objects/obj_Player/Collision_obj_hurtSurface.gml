@@ -1,1 +1,1 @@
-physics_particle_draw()
+room_restart()
