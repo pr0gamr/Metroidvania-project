@@ -1,0 +1,22 @@
+{
+  "$GMRoomUI":"",
+  "%Name":"RoomUI",
+  "children":[],
+  "locked":false,
+  "name":"RoomUI",
+  "parent":{
+    "name":"Metroidvania",
+    "path":"Metroidvania.yyp",
+  },
+  "resourceType":"GMRoomUI",
+  "resourceVersion":"2.0",
+  "viewspaceChildren":[
+    {"$GMRUILayer":"v1","%Name":"UILayer_1","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"FlexPanel","alignItems":2,"children":[
+            {"$GMRFlexPanel":"","%Name":"FlexPanel_1","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":3,"value":289.0,},"justifyContent":1,"name":"FlexPanel_1","nodeColour":4288672328,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":500.0,},},
+            {"$GMRSpriteGraphic":"v1","%Name":"graphic_69255A42","animationSpeed":1.0,"colour":4278190335,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_69255A42","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":5.1875,"scaleY":0.21875,"spriteId":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"x":411.5,"y":-268.0,},
+          ],"flexDirection":0,"flexWrap":1,"height":{"unit":1,"value":576.0,},"justifyContent":1,"name":"FlexPanel","nodeColour":4294068432,"positionType":0,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":1024.0,},},
+      ],"flexDirection":2,"gridX":32,"gridY":32,"justifyContent":1,"name":"UILayer_1","nodeColour":4282970850,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+  ],
+  "visible":true,
+}

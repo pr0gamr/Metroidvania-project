@@ -14,6 +14,10 @@ if (place_meeting(x,y+1,obj_invisWall))
 {
 	grounded = 1;
 }
+else if (place_meeting(x,y+1,obj_noWallJump))
+{
+	grounded = 1;
+}
 else
 {
 	grounded = 0;
@@ -64,6 +68,11 @@ if (place_meeting(x+hsp,y,obj_bouncefloor))
 	}
 }
 
+if (place_meeting(x+hsp,y,obj_noWallJump))
+{
+	hsp = 0;
+}
+
 x = x + hsp
 
 //vertical collision
@@ -79,6 +88,14 @@ vsp = 0;
 if(place_meeting(x,y+vsp,obj_bouncefloor))
 {
 	vsp = -vsp * 0.95;
+}
+if(place_meeting(x,y+vsp,obj_noWallJump))
+{
+	while (!place_meeting(x,y+sign(vsp),obj_noWallJump))
+	{
+		y = y + sign(vsp);
+	}
+vsp = 0;
 }
 
 y = y + vsp
