@@ -12,18 +12,18 @@ vsp = vsp + grv;
 
 if (place_meeting(x,y+1,obj_invisWall))
 {
-	grounded = 1;
+	grounded = true;
 }
 else if (place_meeting(x,y+1,obj_noWallJump))
 {
-	grounded = 1;
+	grounded = true;
 }
 else
 {
-	grounded = 0;
+	grounded = false;
 }
 
-if (_key_jump)
+if (_key_jump and canjump)
 {
 	if (grounded)
 	{
