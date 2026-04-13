@@ -1,7 +1,7 @@
 if (grapple == false)
 {
 	var _hook_drirection = darctan2((y - mouse_y),(x - mouse_x))
-	show_debug_message(string(_hook_drirection))
+	//show_debug_message(string(_hook_drirection))
 	var _hook_speed = (25/90)
 	var _hook = instance_create_layer(x,y,layer,obj_hook);
 	with(_hook)
@@ -26,8 +26,8 @@ if (grapple == false)
 		
 		hsp += obj_player.hsp
 		vsp += obj_player.vsp
-		show_debug_message("vsp = " + string(vsp))
-		show_debug_message("hsp = " + string(hsp))
+		//show_debug_message("vsp = " + string(vsp))
+		//show_debug_message("hsp = " + string(hsp))
 	}
 	grapple = true;
 }
