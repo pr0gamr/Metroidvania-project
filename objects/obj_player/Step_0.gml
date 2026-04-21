@@ -17,7 +17,7 @@ function enemy_collision()
 			}
 			vsp = -5
 			instance_nearest(x,y,obj_enemy_main).moveSpeed = instance_nearest(x,y,obj_enemy_main).moveSpeed * -1
-			iFrames = 15
+			iFrames = 20
 		}
 	}
 	
