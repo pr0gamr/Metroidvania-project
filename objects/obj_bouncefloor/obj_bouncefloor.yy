@@ -6,10 +6,13 @@
   "name":"obj_bouncefloor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"walls",
+    "path":"folders/Objects/walls.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collisionbox",
+    "path":"objects/obj_collisionbox/obj_collisionbox.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

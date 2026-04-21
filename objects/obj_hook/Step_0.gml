@@ -1,6 +1,6 @@
 
 
-if !(collision_rectangle(x-17,y-17-sign(vsp),x+17,y+17+sign(vsp),obj_invisWall,false,true))
+if !(collision_rectangle(x-17,y-17-sign(vsp),x+17,y+17+sign(vsp),obj_pogoBlock,false,true))
 {
 	vsp = vsp + grv;
 	y = y + vsp

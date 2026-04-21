@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_noWallJump",
+  "%Name":"obj_enemy_main",
   "eventList":[],
   "managed":true,
-  "name":"obj_noWallJump",
+  "name":"obj_enemy_main",
   "overriddenProperties":[],
   "parent":{
-    "name":"walls",
-    "path":"folders/Objects/walls.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_collisionbox",
@@ -29,11 +29,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"Sprite3",
-    "path":"sprites/Sprite3/Sprite3.yy",
-  },
+  "solid":false,
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
