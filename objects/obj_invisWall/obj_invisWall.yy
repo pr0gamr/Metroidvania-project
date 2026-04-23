@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Sprite2",
-    "path":"sprites/Sprite2/Sprite2.yy",
+    "name":"spr_concrete",
+    "path":"sprites/spr_concrete/spr_concrete.yy",
   },
   "spriteMaskId":null,
   "visible":true,
