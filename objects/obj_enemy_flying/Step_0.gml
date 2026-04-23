@@ -9,3 +9,6 @@ if moveSpeed < 0 and !alarm_get(0)
 {
 	alarm_set(0,10)
 }
+
+x += e_hsp
+y += e_vsp

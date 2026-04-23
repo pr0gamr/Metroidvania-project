@@ -1,6 +1,11 @@
 movement()
 enemy_collision()
 
+if attackCd > 0
+{
+	attackCd -= 1
+}
+
 function enemy_collision()
 {
 	if !iFrames
