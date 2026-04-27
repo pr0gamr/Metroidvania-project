@@ -12,3 +12,8 @@ if moveSpeed < 0 and !alarm_get(0)
 
 x += e_hsp
 y += e_vsp
+
+if e_health <= 0
+{
+	instance_destroy(self)
+}
