@@ -23,9 +23,10 @@ function enemy_collision()
 			vsp = -5
 			instance_nearest(x,y,obj_enemy_main).moveSpeed = instance_nearest(x,y,obj_enemy_main).moveSpeed * -1
 			iFrames = 20
+			player_health -= 1
 		}
 	}
-	
+	if player_health <= 0 instance_destroy(self)
 	if iFrames > 0 
 	{
 		iFrames -= 1;
