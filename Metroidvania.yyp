@@ -26,7 +26,9 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_effect_glow-1.0.0","name":"io.gamemaker.gm_effect_glow-1.0.0","path":"io.gamemaker.gm_effect_glow-1.0.0.yyp",},
+  ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -46,6 +48,7 @@
     {"id":{"name":"obj_pogoBlock","path":"objects/obj_pogoBlock/obj_pogoBlock.yy",},},
     {"id":{"name":"obj_verticalDoor","path":"objects/obj_verticalDoor/obj_verticalDoor.yy",},},
     {"id":{"name":"rm_tilemap_test","path":"rooms/rm_tilemap_test/rm_tilemap_test.yy",},},
+    {"id":{"name":"Room1_tlst_test","path":"rooms/Room1_tlst_test/Room1_tlst_test.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
@@ -63,9 +66,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_tilemap_test","path":"rooms/rm_tilemap_test/rm_tilemap_test.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_tilemap_test","path":"rooms/rm_tilemap_test/rm_tilemap_test.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Room1_tlst_test","path":"rooms/Room1_tlst_test/Room1_tlst_test.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
