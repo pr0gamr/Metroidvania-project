@@ -53,6 +53,8 @@
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"Golbo","path":"sprites/Golbo/Golbo.yy",},},
+    {"id":{"name":"spr_hook_lodge","path":"sprites/spr_hook_lodge/spr_hook_lodge.yy",},},
+    {"id":{"name":"spr_hook_spin","path":"sprites/spr_hook_spin/spr_hook_spin.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
@@ -66,8 +68,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_tilemap_test","path":"rooms/rm_tilemap_test/rm_tilemap_test.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room1_tlst_test","path":"rooms/Room1_tlst_test/Room1_tlst_test.yy",},},
   ],

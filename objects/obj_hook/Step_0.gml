@@ -2,12 +2,17 @@
 
 if !(collision_rectangle(x-17,y-17-sign(vsp),x+17,y+17+sign(vsp),obj_invisWall,false,true))
 {
+	sprite_index = spr_hook_spin;
 	vsp = vsp + grv;
 	y = y + vsp
 	x = x + hsp
 }
 else
 {
+	sprite_index = spr_hook_lodge;
+	if (x < obj_player.x){
+		image_xscale = -1;
+	}
 	vsp = 0
 	hsp = 0
 	with obj_player
