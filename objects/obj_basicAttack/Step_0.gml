@@ -1,8 +1,5 @@
 // Inherit the parent event
-vsp = vsp + grv;
 
-y = y + vsp
-x = x + hsp
 
 // pogo-ing
 
@@ -34,3 +31,9 @@ if place_meeting(x,y,[obj_enemy_main, obj_pogoBlock, obj_hurtSurface]) and !hit
 		_target.e_health -= 1
 	}
 }
+
+vsp = obj_player.vsp
+hsp = obj_player.hsp
+
+y = y + vsp
+x = x + hsp
