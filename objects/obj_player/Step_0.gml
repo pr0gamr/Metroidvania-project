@@ -1,3 +1,40 @@
+movement()
+enemy_collision()
+
+if attackCd > 0
+{
+	attackCd -= 1
+}
+
+function enemy_collision()
+{
+	if !iFrames
+	{
+		if place_meeting(x,y,instance_nearest(x,y,obj_enemy_main))
+		{
+			if x > instance_nearest(x,y,obj_enemy_main).x
+			{
+				hsp = 10
+			}
+			else if x <= instance_nearest(x,y,obj_enemy_main).x
+			{
+				hsp = -10
+			}
+			vsp = -5
+			instance_nearest(x,y,obj_enemy_main).moveSpeed = instance_nearest(x,y,obj_enemy_main).moveSpeed * -1
+			iFrames = 20
+			player_health -= 1
+		}
+	}
+	if player_health <= 0 instance_destroy(self)
+	if iFrames > 0 
+	{
+		iFrames -= 1;
+	}
+}
+
+function movement()
+{
 var _key_left = keyboard_check(ord("A"));
 var _key_right = keyboard_check(ord("D"));
 var _key_jump = keyboard_check_pressed(vk_space);
@@ -100,6 +137,7 @@ vsp = 0;
 }
 
 y = y + vsp
+}
 
 function Approach(speed, max_speed, acceleration)
 {

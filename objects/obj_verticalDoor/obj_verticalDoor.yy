@@ -8,8 +8,8 @@
   "name":"obj_verticalDoor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"interactions",
+    "path":"folders/Objects/interactions.yy",
   },
   "parentObjectId":null,
   "persistent":false,
