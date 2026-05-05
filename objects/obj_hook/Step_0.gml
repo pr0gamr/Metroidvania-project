@@ -41,3 +41,5 @@ else
 		canjump = false
 	}
 }
+
+draw_line_width(x,y,obj_player.x,obj_player.y,3);
