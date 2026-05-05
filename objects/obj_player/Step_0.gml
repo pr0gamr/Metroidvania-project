@@ -38,6 +38,7 @@ function movement()
 var _key_left = keyboard_check(ord("A"));
 var _key_right = keyboard_check(ord("D"));
 var _key_jump = keyboard_check_pressed(vk_space);
+var _tlst_colld = layer_tilemap_get_id("Tiles_1");
 
 // movement
 
@@ -47,11 +48,11 @@ hsp = Approach(hsp, _move, accel);
 
 vsp = vsp + grv;
 
-if (place_meeting(x,y+1,obj_invisWall))
+if (place_meeting(x,y+1,[_tlst_colld,obj_invisWall]))
 {
 	grounded = true;
 }
-else if (place_meeting(x,y+1,obj_noWallJump))
+else if (place_meeting(x,y+1,[_tlst_colld,obj_noWallJump]))
 {
 	grounded = true;
 }
@@ -66,12 +67,12 @@ if (_key_jump and canjump)
 	{
 		vsp = -jumpsp;
 	}
-	else if (place_meeting(x+3,y,obj_invisWall))
+	else if (place_meeting(x+3,y,[_tlst_colld,obj_invisWall]))
 	{
 		hsp = -walksp*2.5;
 		vsp = -jumpsp + vsp*0.25;
 	}
-	else if (place_meeting(x-3,y,obj_invisWall))
+	else if (place_meeting(x-3,y,[_tlst_colld,obj_invisWall]))
 	{
 		hsp = walksp*2.5;
 		vsp = -jumpsp + vsp*0.25;
@@ -88,7 +89,7 @@ else if (_move < 0)
 }
 
 //horizontal collision
-if (place_meeting(x+hsp,y,obj_invisWall))
+if (place_meeting(x+hsp,y, [_tlst_colld,obj_invisWall]))
 {
 	hsp = 0;
 	if (vsp >= 1)
@@ -105,7 +106,7 @@ if (place_meeting(x+hsp,y,obj_bouncefloor))
 	}
 }
 
-if (place_meeting(x+hsp,y,obj_noWallJump))
+if (place_meeting(x+hsp,y,[_tlst_colld,obj_noWallJump]))
 {
 	hsp = 0;
 }
@@ -114,9 +115,9 @@ x = x + hsp
 
 //vertical collision
 
-if(place_meeting(x,y+vsp,obj_invisWall))
+if(place_meeting(x,y+vsp,[_tlst_colld,obj_invisWall]))
 {
-	while (!place_meeting(x,y+sign(vsp),obj_invisWall))
+	while (!place_meeting(x,y+sign(vsp),[_tlst_colld,obj_invisWall]))
 	{
 		y = y + sign(vsp);
 	}
