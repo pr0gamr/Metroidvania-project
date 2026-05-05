@@ -2,7 +2,7 @@
 
 if !(collision_rectangle(x-17,y-17-sign(vsp),x+17,y+17+sign(vsp),obj_invisWall,false,true))
 {
-	vsp = vsp + grv;
+	//vsp = vsp + grv;
 	y = y + vsp
 	x = x + hsp
 }
