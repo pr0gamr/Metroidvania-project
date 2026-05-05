@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Sprite8",
-    "path":"sprites/Sprite8/Sprite8.yy",
+    "name":"spr_hook_lodge",
+    "path":"sprites/spr_hook_lodge/spr_hook_lodge.yy",
   },
   "spriteMaskId":null,
   "visible":true,

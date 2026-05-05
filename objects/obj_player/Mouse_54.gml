@@ -24,8 +24,8 @@ if (grapple == false)
 			vsp = ((_hook_drirection) + 180) * _hook_speed
 		}
 		
-		hsp += obj_player.hsp
-		vsp += obj_player.vsp
+		//hsp += obj_player.hsp
+		//vsp += obj_player.vsp
 		//show_debug_message("vsp = " + string(vsp))
 		//show_debug_message("hsp = " + string(hsp))
 	}

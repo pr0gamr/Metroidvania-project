@@ -1,9 +1,9 @@
 
 
-if !(collision_rectangle(x-17,y-17-sign(vsp),x+17,y+17+sign(vsp),obj_invisWall,false,true))
+if !(collision_rectangle(x-17,y-17-sign(vsp),x+17,y+17+sign(vsp),obj_pogoBlock,false,true))
 {
 	sprite_index = spr_hook_spin;
-	vsp = vsp + grv;
+	//vsp = vsp + grv;
 	y = y + vsp
 	x = x + hsp
 	//help me
