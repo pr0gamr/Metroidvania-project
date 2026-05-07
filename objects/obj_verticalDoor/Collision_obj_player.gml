@@ -1,3 +1,5 @@
+
 room_goto(target_room)
-obj_player.x = 150;
+obj_player.x = targetX;
+obj_player.y = targetY;
 

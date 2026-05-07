@@ -1,0 +1,2 @@
+
+var target_room, targetX, targetY;
