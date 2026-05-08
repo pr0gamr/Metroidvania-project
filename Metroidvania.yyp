@@ -54,6 +54,8 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_pogoBlock","path":"objects/obj_pogoBlock/obj_pogoBlock.yy",},},
     {"id":{"name":"obj_verticalDoor","path":"objects/obj_verticalDoor/obj_verticalDoor.yy",},},
+    {"id":{"name":"rm_doortest_1","path":"rooms/rm_doortest_1/rm_doortest_1.yy",},},
+    {"id":{"name":"rm_doortest_2","path":"rooms/rm_doortest_2/rm_doortest_2.yy",},},
     {"id":{"name":"rm_tilemap_test","path":"rooms/rm_tilemap_test/rm_tilemap_test.yy",},},
     {"id":{"name":"Room1_tlst_test","path":"rooms/Room1_tlst_test/Room1_tlst_test.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -76,10 +78,12 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_doortest_1","path":"rooms/rm_doortest_1/rm_doortest_1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room1_tlst_test","path":"rooms/Room1_tlst_test/Room1_tlst_test.yy",},},
     {"roomId":{"name":"rm_tilemap_test","path":"rooms/rm_tilemap_test/rm_tilemap_test.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
-    {"roomId":{"name":"Room1_tlst_test","path":"rooms/Room1_tlst_test/Room1_tlst_test.yy",},},
+    {"roomId":{"name":"rm_doortest_2","path":"rooms/rm_doortest_2/rm_doortest_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
