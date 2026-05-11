@@ -41,6 +41,13 @@ else
 		grv = 0;
 		canjump = false
 	}
+	if (place_meeting(x,y,obj_player))
+	{
+	obj_player.grv = grv
+	obj_player.canjump = true
+	obj_player.grapple = false
+	instance_destroy(self)
+	}
 }
 
 draw_line_width(x,y,obj_player.x,obj_player.y,3);
