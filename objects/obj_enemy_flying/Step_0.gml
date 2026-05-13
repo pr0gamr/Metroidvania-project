@@ -1,6 +1,6 @@
 if instance_exists(obj_player)
 {
-	if distance_to_object(obj_player) < 2000
+	if distance_to_object(obj_player) < 600
 	{
 		mp_potential_step_object(obj_player.x,obj_player.y,moveSpeed,obj_collisionbox)
 	}

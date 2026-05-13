@@ -26,7 +26,6 @@ function enemy_collision()
 			player_health -= 1
 		}
 	}
-	if player_health <= 0 instance_destroy(self)
 	if iFrames > 0 
 	{
 		iFrames -= 1;

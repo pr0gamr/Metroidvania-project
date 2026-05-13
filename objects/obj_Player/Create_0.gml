@@ -1,1 +1,1 @@
-player_health = 5;
+player_health = player_maxHp;
