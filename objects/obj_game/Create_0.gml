@@ -6,7 +6,7 @@ globalvar player_health
 globalvar roomStartX
 globalvar roomStartY
 globalvar player_maxHp
-
+globalvar grv
 
 
 

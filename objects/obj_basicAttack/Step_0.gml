@@ -29,6 +29,7 @@ if place_meeting(x,y,[obj_enemy_main, obj_pogoBlock, obj_hurtSurface]) and !hit
 		}
 		_target.alarm[1] = 5
 		_target.e_health -= 1
+		_target.hit = true
 	}
 }
 

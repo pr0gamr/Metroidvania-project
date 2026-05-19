@@ -45,6 +45,7 @@
     {"id":{"name":"obj_bouncefloor","path":"objects/obj_bouncefloor/obj_bouncefloor.yy",},},
     {"id":{"name":"obj_collisionbox","path":"objects/obj_collisionbox/obj_collisionbox.yy",},},
     {"id":{"name":"obj_enemy_flying","path":"objects/obj_enemy_flying/obj_enemy_flying.yy",},},
+    {"id":{"name":"obj_enemy_ground","path":"objects/obj_enemy_ground/obj_enemy_ground.yy",},},
     {"id":{"name":"obj_enemy_main","path":"objects/obj_enemy_main/obj_enemy_main.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
     {"id":{"name":"obj_hook","path":"objects/obj_hook/obj_hook.yy",},},

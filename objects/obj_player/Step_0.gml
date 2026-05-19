@@ -10,7 +10,7 @@ function enemy_collision()
 {
 	if !iFrames
 	{
-		if place_meeting(x,y,instance_nearest(x,y,obj_enemy_main))
+		if place_meeting(x,y,instance_nearest(x,y,obj_enemy_main)) and instance_nearest(x,y,obj_enemy_main).e_health > 0
 		{
 			if x > instance_nearest(x,y,obj_enemy_main).x
 			{
@@ -21,7 +21,7 @@ function enemy_collision()
 				hsp = -10
 			}
 			vsp = -5
-			instance_nearest(x,y,obj_enemy_main).moveSpeed = instance_nearest(x,y,obj_enemy_main).moveSpeed * -1
+			//instance_nearest(x,y,obj_enemy_main).moveSpeed = instance_nearest(x,y,obj_enemy_main).moveSpeed * -1
 			iFrames = 20
 			player_health -= 1
 		}
@@ -114,9 +114,9 @@ x = x + hsp
 
 //vertical collision
 
-if(place_meeting(x,y+vsp,[_tlst_colld,obj_invisWall]))
+if(place_meeting(x,y+vsp,[_tlst_colld,obj_invisWall,obj_noWallJump]))
 {
-	while (!place_meeting(x,y+sign(vsp),[_tlst_colld,obj_invisWall]))
+	while (!place_meeting(x,y+sign(vsp),[_tlst_colld,obj_invisWall,obj_noWallJump]))
 	{
 		y = y + sign(vsp);
 	}
@@ -125,14 +125,6 @@ vsp = 0;
 if(place_meeting(x,y+vsp,obj_bouncefloor))
 {
 	vsp = -vsp * 0.95;
-}
-if(place_meeting(x,y+vsp,obj_noWallJump))
-{
-	while (!place_meeting(x,y+sign(vsp),obj_noWallJump))
-	{
-		y = y + sign(vsp);
-	}
-vsp = 0;
 }
 
 y = y + vsp
