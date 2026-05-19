@@ -10,7 +10,7 @@ function enemy_collision()
 {
 	if !iFrames
 	{
-		if place_meeting(x,y,instance_nearest(x,y,obj_enemy_main))
+		if place_meeting(x,y,instance_nearest(x,y,obj_enemy_main)) and instance_nearest(x,y,obj_enemy_main).e_health > 0
 		{
 			if x > instance_nearest(x,y,obj_enemy_main).x
 			{
