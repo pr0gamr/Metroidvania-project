@@ -23,9 +23,10 @@ y += e_vsp
 if e_health <= 0
 {
 	moveSpeed = 0;
+	e_hsp = 0;
 	if sprite_index != spr_pigeon_death
 	{
-	e_vsp = random_range(-15,-30);
+		e_vsp = random_range(-15,-30);
 	}
 	sprite_index = spr_pigeon_death;
 	e_vsp += grv
