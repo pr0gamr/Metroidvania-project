@@ -38,12 +38,12 @@ else
 		{
 			vsp = ((_hook_direction) + 180) * _hook_speed
 		}
-		grv = 0;
+		//grv = 0;
 		canjump = false
 	}
 	if (place_meeting(x,y,obj_player))
 	{
-	obj_player.grv = grv
+	//obj_player.grv = grv
 	obj_player.canjump = true
 	obj_player.grapple = false
 	instance_destroy(self)
