@@ -1,10 +1,12 @@
+if instance_number(obj_game) > 1 instance_destroy(self)
+
 globalvar playerX
 globalvar playerY
 globalvar player_health
 globalvar roomStartX
 globalvar roomStartY
 globalvar player_maxHp
-
+globalvar grv
 
 
 
