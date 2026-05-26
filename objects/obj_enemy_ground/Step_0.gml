@@ -10,6 +10,13 @@ if instance_exists(obj_player)
 	}
 }
 
+if (x < obj_player.x){
+	image_xscale = -1;
+}
+else {
+	image_xscale = 1;
+}
+
 
 var _tlst_colld = layer_tilemap_get_id("Tiles_1");
 e_vsp += grv

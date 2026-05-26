@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_collisionbox",
+  "%Name":"obj_hookPoint",
   "eventList":[],
   "managed":true,
-  "name":"obj_collisionbox",
+  "name":"obj_hookPoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"walls",
-    "path":"folders/Objects/walls.yy",
+    "name":"interactions",
+    "path":"folders/Objects/interactions.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,5 +32,5 @@
     "path":"sprites/Sprite9/Sprite9.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

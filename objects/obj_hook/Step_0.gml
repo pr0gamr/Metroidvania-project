@@ -1,6 +1,6 @@
 
 
-if !(collision_rectangle(x-17,y-17-sign(vsp),x+17,y+17+sign(vsp),obj_invisWall,false,true))
+if !(collision_rectangle(x-17,y-17-sign(vsp),x+17,y+17+sign(vsp),obj_hookPoint,false,true))
 {
 	sprite_index = spr_hook_spin;
 	//vsp = vsp + grv;
