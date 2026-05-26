@@ -1,6 +1,6 @@
 if instance_exists(obj_player)
 {
-	if distance_to_object(obj_player) < 200 and !hit
+	if distance_to_object(obj_player) < 400 and !hit
 	{
 		if sprite_index != spr_rat_move{
 			sprite_index = spr_rat_move;

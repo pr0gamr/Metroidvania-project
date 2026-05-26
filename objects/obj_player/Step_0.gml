@@ -21,7 +21,6 @@ function enemy_collision()
 				hsp = -10
 			}
 			vsp = -5
-			//instance_nearest(x,y,obj_enemy_main).moveSpeed = instance_nearest(x,y,obj_enemy_main).moveSpeed * -1
 			iFrames = 20
 			player_health -= 1
 		}
