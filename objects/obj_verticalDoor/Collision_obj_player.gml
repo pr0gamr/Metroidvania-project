@@ -1,4 +1,7 @@
-if target_room == Golbo game_restart()
+if room == Room2
+{
+game_restart()
+}
 
 room_goto(target_room)
 obj_player.x = targetX;
